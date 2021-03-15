@@ -4,7 +4,7 @@ jwt authentication for spring
 ---
 Project: Maven\
 java version: 11\
-Spring boot: 2.4.3\
+Spring boot: 2.4.3
 
 #### Dependencies
 <pre>
