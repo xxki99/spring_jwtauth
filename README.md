@@ -7,7 +7,7 @@ java version: 11
 Spring boot: 2.4.3
 
 #### dependencies
----
+"
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -43,7 +43,7 @@ Spring boot: 2.4.3
       <scope>test</scope>
     </dependency>
   </dependencies>
----
+"
 
 #### Spring initializr
 
