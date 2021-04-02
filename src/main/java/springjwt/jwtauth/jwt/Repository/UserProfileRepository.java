@@ -12,4 +12,6 @@ public interface UserProfileRepository extends CrudRepository<UserProfile, Long>
     Set<UserProfile> findAll();
 
     Optional<UserProfile> findByUsername(String username);
+
+    boolean existsByUsername(String username);
 }
