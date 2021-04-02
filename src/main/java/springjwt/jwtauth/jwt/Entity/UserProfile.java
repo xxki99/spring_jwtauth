@@ -24,10 +24,12 @@ import lombok.Setter;
 @NoArgsConstructor
 public class UserProfile {
 
-    public UserProfile(String username, String password, String email){
+    public UserProfile(String username, String password, String email, Set<Role> roles){
         this.username = username;
         this.password = password;
         this.email = email;
+
+        this.roles = roles;
     }
 
     @Id
@@ -57,7 +59,7 @@ public class UserProfile {
     private String email;
 
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(	name = "user_roles", 
 				joinColumns = @JoinColumn(name = "user_id"), 
 				inverseJoinColumns = @JoinColumn(name = "role_id"))
