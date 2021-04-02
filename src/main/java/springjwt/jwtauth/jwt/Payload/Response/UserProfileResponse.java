@@ -18,4 +18,5 @@ public class UserProfileResponse {
     public static UserProfileResponse build(UserProfile user){
         return new UserProfileResponse(user.getUsername(), user.getEmail());
     }
+
 }
