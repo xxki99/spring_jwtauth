@@ -8,5 +8,10 @@ https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.3
 ```
 ---
 
+| url | description | input  |output |
+| /api/register | register new user | {"username", "password", "email"} | UserResponsePayload {"username", "email"} |
+| /api/login | login | {"username", "password"} | Jwt token |
+| /api/index | Read Jwt from cookie and try to authorize | na | Current user UserResponsePayload {"username", "email"} if Jwt is valid |
+
 
 
