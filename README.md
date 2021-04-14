@@ -15,7 +15,7 @@ This project is using postgresql. Need to change config in application.propertie
 
 ---
 
-| url | description | input(json)  | output(json) |
+| url | description | input (json)  | output (json) |
 | --- | ----------- | ------ | ------ |
 | /api/register | register new user | {"username", "password", "email"} | UserResponsePayload {"username", "email"} |
 | /api/login | login | {"username", "password"} | Jwt token |
