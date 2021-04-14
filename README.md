@@ -8,7 +8,7 @@ https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.3
 ```
 ---
 
-| url | description | input  | output |
+| url | description | input(json)  | output(json) |
 | --- | ----------- | ------ | ------ |
 | /api/register | register new user | {"username", "password", "email"} | UserResponsePayload {"username", "email"} |
 | /api/login | login | {"username", "password"} | Jwt token |
