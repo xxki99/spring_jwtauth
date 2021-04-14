@@ -48,14 +48,17 @@ public class JwtAuthFilter extends OncePerRequestFilter{
         // get jwt token header from request
         Cookie[] cookies = request.getCookies();
 
-        String token = "";
+        String token = null;
 
+        if (cookies != null){
 
-        for (Cookie cookie : cookies){
-            if (cookie.getName().equals("Authorization")){
+            for (Cookie cookie : cookies){
+                if (cookie.getName().equals("Authorization")){
 
-                token = cookie.getValue();
+                    token = cookie.getValue();
+                }
             }
+
         }
 
 

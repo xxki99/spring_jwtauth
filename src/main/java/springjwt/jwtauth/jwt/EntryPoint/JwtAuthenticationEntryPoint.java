@@ -25,7 +25,7 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint{
     public void commence(HttpServletRequest request, HttpServletResponse response,
             AuthenticationException authException) throws IOException, ServletException {
         
-        logger.error("Unauthorized Error {}", authException.getMessage());
+        logger.error("Unauthorized Error: {}", authException.getMessage());
 
         
 
@@ -38,7 +38,7 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint{
             logger.info("principal = " + principal.getPrincipal());
         }
 
-        response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Error: CustomEntrypointUnauthorized");
+        response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
 
         
     }
