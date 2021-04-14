@@ -8,6 +8,13 @@ https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.3
 ```
 ---
 
+---
+
+This project is using postgresql. Need to change config in application.properties in order to connect to postgreSQL.
+
+
+---
+
 | url | description | input(json)  | output(json) |
 | --- | ----------- | ------ | ------ |
 | /api/register | register new user | {"username", "password", "email"} | UserResponsePayload {"username", "email"} |
